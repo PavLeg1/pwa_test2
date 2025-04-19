@@ -1,0 +1,200 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #1976d2;
+}
+
+h2 {
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* Стили для QR-кодов */
+.qr-codes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.qr-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.qr-item img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  background: white;
+}
+
+/* Стили для GitHub иконки */
+.github {
+  text-align: center;
+}
+
+.github-icon {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s;
+}
+
+.github-icon:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Оффлайн стили */
+.offline-message {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .qr-codes {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qr-item img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.qr-button {
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.qr-button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+.qr-button:active {
+  transform: translateY(0);
+}
+
+/* Адаптивность для кнопок */
+@media (max-width: 500px) {
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qr-button {
+    width: 80%;
+  }
+}
+
+
+.profile-photo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30%;
+  object-fit: cover;
+  border: 3px solid #1976d2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.55);
+}
+
+/* Адаптивность для фотографии */
+@media (max-width: 600px) {
+  .profile-photo img {
+    width: 120px;
+    height: 150px;
+  }
+}
+
+#offline-notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.offline-banner {
+  background-color: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Оффлайн страница */
+.offline-message {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.offline-message button {
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.offline-message button:hover {
+  background-color: #1565c0;
+}
